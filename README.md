@@ -13,4 +13,4 @@ Feel free to explore the functions included in this library. To get started, sim
 
 ## Folder Structure
 
-The organization of directories and files in this project draws inspiration from [mlanca-c](https://github.com/mlanca-c). Their approach greatly influenced the layout and structure you see here. This folder organization was chosen for its clarity, ease of navigation, and logical arrangement, providing a framework that enhances the maintainability and readability of the codebase.
+The organization of directories and files in this project draws inspiration from [mlanca-c](https://github.com/mlanca-c). Their approach greatly influenced the layout and structure you see here. This folder organization was chosen for its clarity, ease of navigation, and logical arrangement, providing a framework that enhances the maintainability of the project.
