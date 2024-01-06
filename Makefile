@@ -55,7 +55,6 @@ check_o:
 		echo "$(GREEN)/// Compilation complete ///"; \
 	fi
 
-
 clean:
 	rm -f $(OBJS)
 	@echo "$(RED)/// Extermination half complete ///"
