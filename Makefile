@@ -44,6 +44,8 @@ SRCS = $(CTYPE) $(LST) $(STDIO) $(STDLIB) $(STRING)
 OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
+	@echo "Done"
+
 
 $(NAME): check_o  $(OBJS)
 	ar rc $(NAME) $(OBJS)
@@ -52,7 +54,7 @@ check_o:
 	@if [ -e sources/ft_lst/ft_lstnew.o ]; then \
 		echo "$(RED)Object files already exist."; \
 	else \
-		echo "$(GREEN)/// Compilation complete ///"; \
+		echo "$(GREEN)Compiling..."; \
 	fi
 
 clean:
