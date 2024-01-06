@@ -19,5 +19,6 @@ int		ft_atoi(const char *str);
 void	*ft_calloc(size_t n, size_t size);
 char	*ft_itoa(int n);
 char	*ft_itoa_unsigned(unsigned int n);
+double	ft_atoi_double(char *str);
 
 #endif
