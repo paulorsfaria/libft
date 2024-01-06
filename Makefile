@@ -1,6 +1,7 @@
 GREEN = \033[38;5;46m
 RED = \033[0;31m
 On_IRed= \033[0;101m
+RESET = \033[0m
 NAME = libft.a
 CFLAGS = -Wall -Wextra -Werror -fPIE
 CC = cc
@@ -44,16 +45,26 @@ OBJS = $(SRCS:.c=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
+$(NAME): check_o  $(OBJS)
 	ar rc $(NAME) $(OBJS)
-	@echo "$(GREEN)/// Compilation complete ///"
+
+check_o:
+	@if [ -e sources/ft_lst/ft_lstnew.o ]; then \
+		echo "$(RED)Object files already exist."; \
+	else \
+		echo "$(GREEN)/// Compilation complete ///"; \
+	fi
+
 
 clean:
 	rm -f $(OBJS)
 	@echo "$(RED)/// Extermination half complete ///"
+
 fclean: clean
 	rm -f $(NAME)
 	@echo "$(RED)/// Extermination complete ///"
-	@echo "$(On_IRed)/// Thank you for using our Make-a-file services ///"
+	@echo "$(On_IRed)/// Thank you for using our Make-a-file services ///$(RESET)"
 
 re: fclean all
+
+.SILENT:
