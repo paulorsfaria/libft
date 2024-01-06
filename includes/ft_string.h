@@ -6,7 +6,7 @@
 /*   By: paulo-do <paulo-do@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 03:58:10 by paulo-do          #+#    #+#             */
-/*   Updated: 2024/01/05 04:23:14 by paulo-do         ###   ########.fr       */
+/*   Updated: 2024/01/06 07:30:10 by paulo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,6 @@ char	*ft_strdup(const char *str1);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	**ft_split(char const *s, char c);
+char	*ft_tolowerstr(char *str);
 
 #endif
