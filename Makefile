@@ -38,6 +38,8 @@ STRING = sources/ft_string/ft_bzero.c sources/ft_string/ft_memmove.c \
 			sources/ft_string/ft_strchr.c sources/ft_string/ft_strlcat.c \
 			sources/ft_string/ft_strncmp.c sources/ft_string/ft_substr.c
 
+INCLUDES = includes/
+
 GNL = sources/ft_gnl/get_next_line.c sources/ft_gnl/get_next_line_utils.c
 
 SRCS = $(CTYPE) $(LST) $(STDIO) $(STDLIB) $(STRING)
