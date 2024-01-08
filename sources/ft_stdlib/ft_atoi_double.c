@@ -28,9 +28,9 @@ double	ft_atoi_double(char *str)
 	if (*str == '-' || *str == '+')
 		if (*str++ == '-')
 			sig = -1;
-	while (*str != '.' && *str != '\0')
+	while (*str != '.' && *str != ',' && *str != '\0')
 		result = (result * 10) + (*str++ - '0');
-	if (*str == '.')
+	if (*str == '.' || *str == ',')
 		++str;
 	while (*str >= '0' && *str <= '9' && *str != '\0')
 	{
