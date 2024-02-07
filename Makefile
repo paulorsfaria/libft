@@ -25,7 +25,7 @@ STDIO = sources/ft_stdio/ft_putchar_fd.c sources/ft_stdio/ft_putendl_fd.c \
 
 STDLIB = sources/ft_stdlib/ft_atoi.c sources/ft_stdlib/ft_calloc.c \
 			sources/ft_stdlib/ft_itoa.c sources/ft_stdlib/ft_itoa_unsigned.c \
-			sources/ft_stdlib/ft_atoi_double.c
+			sources/ft_stdlib/ft_atoi_double.c sources/ft_stdlib/ft_atoi_long.c
 
 STRING = sources/ft_string/ft_bzero.c sources/ft_string/ft_memmove.c \
 			sources/ft_string/ft_strdup.c sources/ft_string/ft_strlcpy.c \
