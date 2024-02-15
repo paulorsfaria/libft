@@ -6,7 +6,7 @@
 /*   By: paulo-do <paulo-do@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 11:21:31 by paulo-do          #+#    #+#             */
-/*   Updated: 2024/01/05 07:08:47 by paulo-do         ###   ########.fr       */
+/*   Updated: 2024/02/15 13:51:55 by paulo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@
 # include "ft_stdlib.h"
 # include "ft_stdio.h"
 # include "get_next_line.h"
+# include "ft_lst.h"
 # include "ft_error_message.h"
 
 #endif
