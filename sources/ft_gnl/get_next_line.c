@@ -6,7 +6,7 @@
 /*   By: paulo-do <paulo-do@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 15:01:54 by paulo-do          #+#    #+#             */
-/*   Updated: 2024/01/05 05:19:01 by paulo-do         ###   ########.fr       */
+/*   Updated: 2024/02/21 09:54:10 by paulo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ char	*get_new_line(char *stash)
 		line = malloc(sizeof(char) * (i + 1));
 	else
 		line = malloc(sizeof(char) * (i + 2));
-	if (!line) 
+	if (!line)
 		return (NULL);
 	i = 0;
 	while (stash[i] != '\0' && stash[i] != '\n')

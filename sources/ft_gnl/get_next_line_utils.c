@@ -6,7 +6,7 @@
 /*   By: paulo-do <paulo-do@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 10:16:53 by paulo-do          #+#    #+#             */
-/*   Updated: 2024/01/05 05:18:15 by paulo-do         ###   ########.fr       */
+/*   Updated: 2024/02/21 09:53:56 by paulo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ char	*strjoin(char *stash, char *temp)
 		stash = malloc(sizeof(char));
 		stash[0] = '\0';
 	}
-	temp_stash = (char *)malloc(sizeof(char) * 
-			((ft_strlen(stash) + ft_strlen(temp)) + 1));
+	temp_stash = (char *)malloc(sizeof(char)
+			* ((ft_strlen(stash) + ft_strlen(temp)) + 1));
 	if (!stash)
 		return (NULL);
 	while (stash[i] != '\0')

@@ -6,7 +6,7 @@
 /*   By: paulo-do <paulo-do@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/15 16:14:17 by paulo-do          #+#    #+#             */
-/*   Updated: 2024/01/05 04:14:55 by paulo-do         ###   ########.fr       */
+/*   Updated: 2024/02/21 09:52:32 by paulo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_putnbr_fd(int n, int fd)
 	if (n >= 10)
 	{
 		ft_putnbr_fd(n / 10, fd);
-		n = n % 10; 
+		n = n % 10;
 	}
 	if (n < 10)
 		ft_putchar_fd(n + 48, fd);
