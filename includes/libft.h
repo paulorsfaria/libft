@@ -26,7 +26,7 @@
 # include "ft_stdlib.h"
 # include "ft_stdio.h"
 # include "get_next_line.h"
-# include "ft_lst.h"
+//# include "ft_lst.h"
 # include "ft_error_message.h"
 
 #endif
