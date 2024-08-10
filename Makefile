@@ -41,7 +41,7 @@ STRING = sources/ft_string/ft_bzero.c sources/ft_string/ft_memmove.c \
 
 GNL = sources/ft_gnl/get_next_line.c sources/ft_gnl/get_next_line_utils.c
 
-SRCS = $(CTYPE) $(LST) $(STDIO) $(STDLIB) $(STRING)
+SRCS = $(CTYPE) $(LST) $(STDIO) $(STDLIB) $(STRING) $(GNL)
 
 OBJS = $(SRCS:.c=.o)
 
