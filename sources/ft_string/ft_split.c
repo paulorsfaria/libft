@@ -6,7 +6,7 @@
 /*   By: paulo-do <paulo-do@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/12 11:26:50 by paulo-do          #+#    #+#             */
-/*   Updated: 2023/10/31 09:42:39 by paulo-do         ###   ########.fr       */
+/*   Updated: 2024/08/09 08:30:49 by paulo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,15 @@ static void	*free_hem(char **s, size_t i)
 	return (NULL);
 }
 
+static int	skip_quotes_split(char const *str, char c, int i)
+{
+	if (str[i] == c)
+		i++;
+	while (str[i] != c && str[i] != '\0')
+		i++;
+	return (i);
+}
+
 static size_t	word_count(char const *str, char c)
 {
 	size_t	i;
@@ -37,7 +46,11 @@ static size_t	word_count(char const *str, char c)
 		if (str[i] != '\0')
 			word++;
 		while (str[i] != c && str[i] != '\0')
+		{
+			if (str[i] == '\'' || str[i] == '\"')
+				i = skip_quotes_split(str, str[i], i);
 			i++;
+		}
 	}
 	return (word);
 }
@@ -45,10 +58,22 @@ static size_t	word_count(char const *str, char c)
 static size_t	count_letters(char const *s, char c, size_t i)
 {
 	size_t	size;
+	char	quote_type;
 
 	size = i;
 	while (s[i] != '\0' && s[i] != c)
+	{
+		if (s[i] == '\"' || s[i] == '\'')
+		{
+			quote_type = s[i];
+			i++;
+			while (s[i] != quote_type && s[i] != '\0')
+				i++;
+			if (s[i] == '\0')
+				break ;
+		}
 		i++;
+	}
 	return (i - size);
 }
 

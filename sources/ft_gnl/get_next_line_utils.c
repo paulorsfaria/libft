@@ -27,8 +27,6 @@ char	*strjoin(char *stash, char *temp)
 	}
 	temp_stash = (char *)malloc(sizeof(char)
 			* ((ft_strlen(stash) + ft_strlen(temp)) + 1));
-	if (!stash)
-		return (NULL);
 	while (stash[i] != '\0')
 	{
 		temp_stash[i] = stash[i];
@@ -76,8 +74,6 @@ char	*read_file(int fd, char *stash )
 			return (NULL);
 		}
 		temp[size] = '\0';
-		if (!temp)
-			return (NULL);
 		stash = strjoin(stash, temp);
 		free(temp);
 	}

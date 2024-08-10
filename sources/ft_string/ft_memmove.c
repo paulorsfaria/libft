@@ -6,7 +6,7 @@
 /*   By: paulo-do <paulo-do@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/24 13:43:27 by paulo-do          #+#    #+#             */
-/*   Updated: 2023/10/07 14:40:12 by paulo-do         ###   ########.fr       */
+/*   Updated: 2024/08/10 12:26:19 by paulo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	size_t	i;
 
 	i = 0;
-	if (!dest && !src)
+	if (!dest || !src)
 	{
 		return (0);
 	}
