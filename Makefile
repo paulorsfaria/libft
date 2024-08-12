@@ -37,11 +37,11 @@ STRING = sources/ft_string/ft_bzero.c sources/ft_string/ft_memmove.c \
 			sources/ft_string/ft_strtrim.c sources/ft_string/ft_memcpy.c \
 			sources/ft_string/ft_strchr.c sources/ft_string/ft_strlcat.c \
 			sources/ft_string/ft_strncmp.c sources/ft_string/ft_substr.c \
-			sources/ft_string/ft_tolowerstr.c
+			sources/ft_string/ft_tolowerstr.c sources/ft_string/ft_strndup.c
 
 GNL = sources/ft_gnl/get_next_line.c sources/ft_gnl/get_next_line_utils.c
 
-SRCS = $(CTYPE) $(LST) $(STDIO) $(STDLIB) $(STRING) $(GNL)
+SRCS = $(CTYPE) $(LST) $(STDIO) $(STDLIB) $(STRING)
 
 OBJS = $(SRCS:.c=.o)
 

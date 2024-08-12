@@ -6,7 +6,7 @@
 /*   By: paulo-do <paulo-do@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/05 03:58:10 by paulo-do          #+#    #+#             */
-/*   Updated: 2024/01/06 07:30:10 by paulo-do         ###   ########.fr       */
+/*   Updated: 2024/08/12 11:48:38 by paulo-do         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ void	*ft_memchr(const void *s, int c, size_t n);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strdup(const char *str1);
+char	*ft_strndup( const char *str, size_t size);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	**ft_split(char const *s, char c);
